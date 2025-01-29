@@ -1,0 +1,15 @@
+.Keyword {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900;
+  font-size: 35px;
+}
+
+.Meaning {
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 25px;
+}
+
+.PartOfSpeech {
+  font-weight: 700;
+  font-size: 20px;
+}
