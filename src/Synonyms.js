@@ -4,12 +4,12 @@ export default function Synonyms(props) {
   if (props.synonyms.length > 0) {
     return (
       <div>
-        <p>
-          <strong>Synonyms:</strong>
+        <p className="Synonyms abril-fatface-regular">
+          <strong>synonyms:</strong>
         </p>
         {props.synonyms.map(function (synonym, index) {
           return (
-            <ul>
+            <ul className="Synonyms-list">
               <li key={index}>{synonym}</li>
             </ul>
           );

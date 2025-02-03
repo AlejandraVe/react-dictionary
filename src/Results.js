@@ -6,15 +6,18 @@ export default function Results(props) {
   if (props.information) {
     return (
       <div>
-        <h1 className="Keyword mt-4 mb-0">{props.information.word}</h1>
-        {props.information.phonetics.map(function (phonetic, index) {
-          return (
-            <div key={index}>
-              <Phonetics phonetic={phonetic} />
-            </div>
-          );
-        })}
-        <Phonetics props={props.information.phonetic} />
+        <div className="Meaning">
+          <h1 className="Keyword pt-3">
+            {props.information.word}
+          </h1>
+          {props.information.phonetics.map(function (phonetic, index) {
+            return (
+              <div key={index}>
+                <Phonetics phonetic={phonetic} />
+              </div>
+            );
+          })}
+        </div>
         {props.information.meanings.map(function (meaning, index) {
           return (
             <div key={index}>
@@ -22,7 +25,6 @@ export default function Results(props) {
             </div>
           );
         })}
-        <p></p>
       </div>
     );
   } else {

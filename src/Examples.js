@@ -3,11 +3,11 @@ import React from "react";
 export default function Examples(props) {
   if (props.examples) {
     return (
-      <div>
+      <span>
         <p className="Examples">
           Example: <em>{props.examples}</em>
         </p>
-      </div>
+      </span>
     );
   } else {
     return null;

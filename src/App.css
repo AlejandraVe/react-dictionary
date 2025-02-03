@@ -1,19 +1,107 @@
-.Keyword {
+body {
+  background-color: rgb(245, 255, 255);
+}
+
+.Header {
+  background-color: cadetblue;
+  padding: 40px 40px 15px 40px;
+  color: white;
+}
+
+form {
+  text-align: center;
+}
+
+.Form {
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.Title {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 40px;
+}
+
+.Subtitle {
   font-family: "Courier New", Courier, monospace;
-  font-weight: 900;
-  font-size: 35px;
+}
+
+.Keyword {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  text-transform: capitalize;
+  color: cadetblue;
+}
+
+.abril-fatface-regular {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Phonetics {
+  padding: 2px;
+  text-decoration: none;
+  color: black;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  opacity: 40%;
+  margin-left: 10px;
+}
+
+.Phonetics a {
+  text-decoration: none;
+}
+
+.text-phonetic {
+  padding: 10px;
 }
 
 .Meaning {
-  font-family: "Courier New", Courier, monospace;
+  border: 2px rgb(109, 109, 109);
+  margin: 20px 0px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0 0 0 / 20%);
+  background-color: white;
+  padding: 0px 10px 20px 10px;
 }
 
 .PartOfSpeech {
   font-weight: 700;
-  font-size: 25px;
-  font-style: italic;
+  font-size: 32px;
+  color: cadetblue;
+  margin-left: 5px;
+}
+
+.Definition {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 10px 0px;
+  padding: 0px 0px 0px 15px;
+  list-style-type: none;
 }
 
 .Examples {
-  margin-left: 50px;
+  margin-left: 30px;
+}
+
+.Synonyms {
+  font-weight: 700;
+  font-size: 20px;
+  color: cadetblue;
+  margin-left: 5px;
+}
+
+.Synonyms-list {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0px 10px;
+  padding: 0px 0px 0px 25px;
+  list-style-type: disc;
+}
+
+footer {
+  font-size: 13px;
+  margin-top: 50px;
 }

@@ -4,24 +4,30 @@ import Examples from "./Examples";
 import Synonyms from "./Synonyms";
 
 export default function Meaning(props) {
-  return (
-    <div className="Meaning">
-      <p className="PartOfSpeech">{props.meaning.partOfSpeech}</p>
-      {props.meaning.definitions.map(function (definition, index) {
-        return (
-          <div key={index}>
-            <p>
-              <strong>Definition: </strong>
-              {definition.definition}
-              <br />
-              <Examples examples={definition.example} />
-            </p>
-          </div>
-        );
-      })}
-      <p>
-        <Synonyms synonyms={props.meaning.synonyms} />
-      </p>
-    </div>
-  );
+  if (props) {
+    return (
+      <div className="Meaning">
+        <p className="PartOfSpeech abril-fatface-regular">
+          {props.meaning.partOfSpeech}
+        </p>
+        {props.meaning.definitions.map(function (definition, index) {
+          return (
+            <span key={index}>
+              <ul className="Definition">
+                <li>
+                  {definition.definition}
+                  <Examples examples={definition.example} />
+                </li>
+              </ul>
+            </span>
+          );
+        })}
+        <div>
+          <Synonyms synonyms={props.meaning.synonyms} />
+        </div>
+      </div>
+    );
+  } else {
+    return null;
+  }
 }
