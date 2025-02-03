@@ -6,10 +6,14 @@
 
 .Meaning {
   font-family: "Courier New", Courier, monospace;
-  margin-top: 25px;
 }
 
 .PartOfSpeech {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.Examples {
+  margin-left: 50px;
 }
