@@ -7,7 +7,7 @@ export default function Images(props) {
     return (
       <div className="Meaning pt-3">
         <p className="PartOfSpeech abril-fatface-regular">images</p>
-        <div className="row">
+        <div className="row m-1">
           {props.images.map(function (image, index) {
             if (index < 9) {
               return (

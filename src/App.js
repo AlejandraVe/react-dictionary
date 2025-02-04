@@ -14,13 +14,21 @@ function App() {
         <Dictionary />
         <footer className="text-center border-top">
           <p className="mt-2">
-            Coded by{" "}
+            This project was coded by{" "}
             <a
               href="https://github.com/AlejandraVe"
               target="_blank"
               rel="noreferrer"
             >
               Alejandra Vera
+            </a>{" "}
+            and is{" "}
+            <a href="https://github.com/AlejandraVe/react-dictionary">
+              open-sourced on Github
+            </a>{" "}
+            and{" "}
+            <a href="https://react-dictionary-alevera.netlify.app/">
+              hosted on Netlify
             </a>
           </p>
         </footer>
