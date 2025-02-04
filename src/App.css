@@ -85,12 +85,13 @@ form {
 .Definition {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   margin: 10px 0px;
-  padding: 0px 0px 0px 15px;
+  padding: 0px 0px 0px 5px;
   list-style-type: none;
 }
 
 .Examples {
   margin-left: 30px;
+  margin-bottom: 0px;
 }
 
 .Synonyms {
